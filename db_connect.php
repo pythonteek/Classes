@@ -22,9 +22,9 @@ class DB{
         $conn = new mysqli($host, $username, $password, $db);
         
         if ($conn->connect_error) {
-            return(0);//failed
+            return(0);//Failed connection...
         }else{
-            return($conn);//success
+            return($conn);//Connected successfully!
         }
     }
 }
