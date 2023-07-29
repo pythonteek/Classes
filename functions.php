@@ -1,7 +1,6 @@
 <?php
 include("db_connect.php");
 
-
 class Classes{
     
     function save_class($data){
@@ -29,8 +28,7 @@ class Classes{
             }
 
         }
-    }//end save class...
-    
+    }//end save class...  
     
     function get_course_name($id){
         // Create connection
@@ -104,7 +102,6 @@ class Classes{
         }
     }//end see_class
     
-    
     function see_activate_class(){
         // Create connection
         $db = new DB;
@@ -150,7 +147,6 @@ class Classes{
         }
     }//end see_activate_class
     
-    
     function see_class_random($num){
         // Create connection
         $db = new DB;
@@ -192,9 +188,8 @@ class Classes{
             } else {
                 return(0);//No data!
             }
-
         }
     }//end see_class_random
-    
+
 }
 ?>
